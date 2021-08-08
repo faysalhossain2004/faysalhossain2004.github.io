@@ -1,0 +1,94 @@
+<html> 
+   <head> 
+<meta meta name="viewport" content=  
+
+            "width=device-width, user-scalable=no" />
+      <script>
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+      <style> 
+         .title{ 
+         margin-bottom: 50px; 
+         text-align:center; 
+         width: 226px; 
+         color:green; 
+         border: solid black 2px; 
+         div-align:center;
+         } 
+         input[type="button"] 
+         { 
+         background-color:ross; 
+         color: green; 
+         border: dashed black 2px; 
+         width:100% 
+         } 
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: dashed black 2px; 
+         width:100% 
+         } 
+
+ p{     max-width:50%;
+         margin:auto;
+margin-top:40px;
+margin-bottom:40px;
+         border:5px dashed #4233;
+         outline-width:5px;
+         outline-style:solid;
+         outline-color:red;
+         outline-offset:10px;
+         text-align:center; 
+         
+         
+         
+         }
+
+      </style> 
+   </head> 
+   <body> 
+      <p>Rupom Calculator </p> 
+      <table border="1" align="center" > 
+         <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+         </tr> 
+      </table> 
+   </body>
